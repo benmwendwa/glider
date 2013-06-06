@@ -1,0 +1,11 @@
+<%= simple_form_for(@deal) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, placeholder: 'deal name', label: false %>
+  </div>
+
+  <div class="form-actions" style="display: none">
+    <%= f.button :submit %>
+  </div>
+<% end %>

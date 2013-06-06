@@ -1,0 +1,88 @@
+<div id="content">
+  <div id="pricing" class="container curtain">
+      <div class="span9 offset2">
+        <h1>Pricing</h1>
+        <h2>Please select the pricing your best best suited</h2>
+        <div id="pricing-chart-wrapper">
+          <div class="row">
+
+          <div id="pricing-chart" class="span3">
+            <h3>Basic</h3>
+            <div class="price">
+              <div class="prices">
+               <span class="price-dollar">$</span><span class="price-number">19</span><span class="per-month">/ month</span>
+              </div>
+              <div class="price-free-trial">
+                30 Day Free Trial
+              </div>
+              <div class="pricing-features">
+                <ul>
+                  <li>Up to 5 Active Deals at a time</li>
+                  <li>Unlimited Internal Collaborators</li>
+                  <li>Unlimited External Parties</li>
+                  <li>Email Support</li>
+                </ul>
+                <div class="trial-button">
+                  <%= link_to 'Start Your Free Trial', new_user_registration_path(:plan => 'silver'), :class => 'btn btn-primary' %> 
+                </div>
+                <p>No Credit Card Required</p>
+              </div>
+            </div>              
+          </div>
+
+          <div id="pricing-chart" class="span3">
+            <h3>Professional</h3>
+            <div class="price">
+              <div class="prices">
+               <span class="price-dollar">$</span><span class="price-number">29</span><span class="per-month">/ month</span>
+              </div>
+              <div class="price-free-trial">
+                30 Day Free Trial
+              </div>
+              <div class="pricing-features">
+                <ul>
+                  <li>Up to 15 Active Deals at a time</li>
+                  <li>Unlimited Internal Collaborators</li>
+                  <li>Unlimited External Parties</li>
+                  <li>Email Support</li>
+                </ul>
+                <div class="trial-button">
+                  <%= link_to 'Start Your Free Trial', new_user_registration_path(:plan => 'gold'), :class => 'btn btn-primary' %> 
+                </div>
+                <p>No Credit Card Required</p>
+              </div>
+            </div>              
+          </div>
+
+          <div id="pricing-chart" class="span3">
+            <h3>Enterprise</h3>
+            <div class="price">
+              <div class="prices">
+               <span class="price-dollar">$</span><span class="price-number">50</span><span class="per-month">/ month</span>
+              </div>
+              <div class="price-free-trial">
+                30 Day Free Trial
+              </div>
+              <div class="pricing-features">
+                <ul>
+                  <li>Up to 50 Active Deals at a time</li>
+                  <li>Unlimited Internal Collaborators</li>
+                  <li>Unlimited External Parties</li>
+                  <li>Email Support</li>
+                </ul>
+                <div class="trial-button">
+                  <%= link_to 'Start Your Free Trial', new_user_registration_path(:plan => 'platinum'), :class => 'btn btn-primary' %> 
+                </div>
+                <p>No Credit Card Required</p>
+              </div>
+            </div>              
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

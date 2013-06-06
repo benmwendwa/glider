@@ -1,0 +1,165 @@
+// Place all the styles related to the Deals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.subheader {
+  background-color: #492B5D;
+    box-shadow: 0 2px 0 #262049;
+    height: 85px;
+    line-height: 85px;
+    position: relative;
+}
+
+.subheader .page-title {
+    color: #FFFFFF;
+    font-family: "proxima-nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 31.5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+li {
+    line-height: 20px;
+}
+ul.unstyled, ol.unstyled {
+    list-style: none outside none;
+}
+#load_upload{
+        background: #262049;
+        height: 100px;
+        width: 100px;
+    }
+#box1{
+    background: #262049;
+    height: 100px;
+    width: 100px;
+  }
+#box2{
+    background: black;
+    height: 100px;
+    width: 100px;
+  }
+
+#box2{
+    background: black;
+    padding-bottom:5px;
+  }
+.workflow-item .workflow-element-name{
+  color: #FFFFFF;
+    font-family: "proxima-nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.top-left-arrow:before {
+    border-right-color: #D8E3E8;
+    border-width: 17px 16px 17px 17px;
+    margin-top: -25px;
+}
+.top-left-arrow:before, .top-left-arrow:after {
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+    width: 0;
+}
+.top-left-arrow:after {
+    border-right-color: #F8FAFB;
+    border-width: 15px;
+    margin-top: -24px;
+}
+.top-left-arrow:before, .top-left-arrow:after {
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+    width: 0;
+}
+.workflow-form.expanded .workflow-step-form {
+    display: block;
+}
+.top-left-arrow {
+    position: relative;
+}
+.workflow-step-form {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F8FAFB;
+    border-color: #E8EDF1;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    margin-bottom: 43px;
+    max-width: 700px;
+}
+element.style {
+    cursor: auto;
+}
+html {
+    font-size: 100%;
+}
+
+.workflow-form.expanded input[type="text"], .workflow-form.expanded textarea {
+    width: 502px;
+}
+.workflow-step-form input, .workflow-step-form select, .workflow-step-form textarea {
+    background-color: white;
+}
+input, textarea, .uneditable-input {
+    margin-left: 0;
+}
+input, textarea, .uneditable-input {
+    margin-left: 0;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #F8F8F8;
+    border: 1px solid #EAEEF1;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.176) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+textarea {
+    height: auto;
+}
+input, textarea, .uneditable-input {
+    width: 470px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-clip: padding-box;
+    border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+    width: 380px;
+}
+input, button, select, textarea {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+label, input, button, select, textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}

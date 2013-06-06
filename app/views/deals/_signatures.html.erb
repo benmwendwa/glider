@@ -1,0 +1,17 @@
+<div id="signature_container" style="display: none">
+	<div id="signature">
+		<%= simple_form_for(@signature) do |f| %>
+		  <%= f.error_notification %>
+
+		  <div class="form-inputs">
+		    <%= f.input :deal_id %>
+		    <%= f.input :signedBy %>
+		    <%= f.input :signature %>
+		  </div>
+
+		  <div class="form-actions">
+		    <%= f.button :submit %>
+		  </div>
+		<% end %>
+	</div>
+</div>

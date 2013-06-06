@@ -1,0 +1,143 @@
+<% content_for(:head) do %>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#load_upload').click(function(){
+				$('#upload_container').toggle();
+			});
+			$('#load_requestDoc').click(function(){
+				$('#requestDoc_container').toggle();
+			});
+			$('#load_approvals').click(function(){
+				$('#approvals_container').toggle();
+			});
+			$('#load_getSignature').click(function(){
+				$('#getSignature_container').toggle();
+			});
+		});
+	</script>
+<% end %>
+
+<div class="span12 subheader">
+  <div class="container">
+	    <div data-block="page_title" class="page-title light">
+	      Create a Deal
+	    </div>
+  </div>
+</div>
+<div id="page" class="id">
+	<div class="container gutter">
+		<div id="content" class="base">
+			<div id="content">
+				<div id="deal-builder">
+					<form>
+						<div class='row'>
+							<div class="span2 deal-builder-sidebar">
+						      <h3>Step 1</h3>
+						      <h4>Select Company</h4>
+						    </div>
+						    <div class="10">
+						    	<div class="controls controls-row deal-builder-name-controls clearfix">
+						    		<div id="s2id_autogen1" class="select2-container span5 input-company">
+						    			<%= render 'company' %>
+						    		</div>
+						    	</div>
+						    </div>
+						</div>
+						<div class='row'>
+							<div class="span2 deal-builder-sidebar">
+						      <h3>Step 2</h3>
+						      <h4>Deals Name</h4>
+						    </div>
+						    <div class="10">
+						    	<div class="controls controls-row deal-builder-name-controls clearfix">
+						    		<div id="s2id_autogen1" class="select2-container span5 input-company">
+						    			<%= render 'deal' %>
+						    		</div>
+
+						    	</div>
+						    </div>
+						</div>
+						<div class="row workflow-row">
+							<div class="span2 deal-builder-sidebar">
+						      <h3>Step 3</h3>
+						      <h4>Add Steps</h4>
+						    </div>
+						    <div class="span2 workflow-menu-bar">
+						    	<ul class="unstyled workflow-menu" data-tpl-template="dealer/workflow-menu" style="top: 0px;">
+						    		<li class="workflow-item">
+						    				<div id="box1">
+							    				<div id="sbox">
+						    						<p data-icon="a" class="pictos workflow-element-icon"></p>
+						    						<a href="#" id="load_upload"><p class="workflow-element-name">UPLOAD A DOCUMENT</p></a>	
+							    				</div>								    		
+							    			</div>
+						    			
+						    		</li>
+						    		<li class="workflow-item">
+						    			<div id="">
+						    			</div>
+										<div id="box2">
+											<p data-icon="a" class="pictos workflow-element-icon"></p>
+											<a href="#" id="load_requestDoc"><p class="workflow-element-name">REQUEST A DOCUMENT</p></a>								
+						    			</div>
+									</li>
+						    		<li class="workflow-item">
+						    			<div id="">
+						    			</div>
+										<div id="box1">
+											<p data-icon="a" class="pictos workflow-element-icon"></p>
+											<a href="#" id="load_approvals"><p class="workflow-element-name">GET APPROVAL</p></a>								    		
+						    			</div>
+									</li>
+									<li class="workflow-item">
+										<div id="">
+						    			</div>
+										<div id="box2">
+											<p data-icon="a" class="pictos workflow-element-icon"></p>
+											<a href="#" id="load_getSignature"><p class="workflow-element-name">GET A SIGNATURE</p></a>								    		
+						    			</div>
+									</li>
+						    	</ul>
+						    </div>
+						    <div class="span8 deal-builder-workflow">
+
+								<div class="workflow-selection">
+									<div class="workflow-items">
+										<div>
+											<%= render 'uploads' %>
+											<%= render 'approvals' %>
+											<%= render 'requestDoc' %>
+											<%= render 'getSignature' %>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row workflow-row">
+						      <div class="span2 deal-builder-sidebar">
+						        <h3>Step 4</h3>
+						        <h4>Create The Deal</h4>
+						      </div>
+						      <div class="span10 workflow-form">
+						        <div class="form-actions workflow-actions">
+						          <button class="btn btn-primary btn-large workflow-save disabled" disabled="disabled">Create This Deal</button>
+						          <%= link_to 'Back to deals', deals_path %><br/>
+						        </div>
+						      </div>
+						  </div>
+					</form>
+					
+				</div>
+			</div>
+				
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<div class="workflow-step-form workflow-step-create top-left-arrow" data-step-type="document-create">
+  <%= form_for @upload do |f| %>
+  <div class="title">
+    <h3>Upload a Document</h3>
+  </div>
+
+  <div class="form_elements">
+    <input type="hidden" data-bind-user-id="step.who" value="" name="who">
+    <fieldset>
+
+      <label for="doc_name" class="light">I am uploading the</label>
+      <div class="doc-input clearfix">
+        <input  onchange="alert(event.fpfile.url)" data-fp-services="BOX,COMPUTER,DROPBOX,GITHUB,GOOGLE_DRIVE,GMAIL" data-fp-container="modal" data-fp-mimetypes="*/*" data-fp-apikey="A29Ez5WZDSLexZzbbJrIzz" type="filepicker" data-fp-class="btn btn-primary btn-large" style="display: none;">
+        <span>AND</span>
+        <input type="text" required="" data-bind-value="step.doc_name" placeholder="Name the document" value="" name="doc_name" id="doc_name">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="notes" class="light">Notes</label>
+      <%= f.text_area :description, label: false, placeholder:'Notes' %>
+    </fieldset>
+
+    <div class="form-actions">
+      <a class="btn btn-large delete">Delete Step</a>
+      <button class="btn btn-primary btn-large save">Save Progress</button>
+    </div>
+  </div>
+  <% end %>
+</div>

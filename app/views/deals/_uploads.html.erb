@@ -1,0 +1,28 @@
+<div id="upload_container" style="display: none">
+	<div id="upload">
+		<%= simple_form_for(@upload) do |f| %>
+		  <%= f.error_notification %>
+		  <div class="title">
+		    <h3>Upload a Document</h3>
+		  </div>
+		  <div class="row">
+		  	<div class="form-inputs">
+			   <fieldset>
+			      <label for="doc_name" class="light">I am uploading the</label>
+			      <div class="doc-input clearfix">
+			        <input  onchange="alert(event.fpfile.url)" data-fp-services="BOX,COMPUTER,DROPBOX,GITHUB,GOOGLE_DRIVE,GMAIL" data-fp-container="modal" data-fp-mimetypes="*/*" data-fp-apikey="A29Ez5WZDSLexZzbbJrIzz" type="filepicker" data-fp-class="btn btn-primary btn-large" style="display: none;">
+			        <span>AND</span>
+			        <input type="text" required="" data-bind-value="step.doc_name" placeholder="Name the document" value="" name="doc_name" id="doc_name">
+			      </div>
+			    </fieldset>
+			   <%= f.text_area :description, label: false, placeholder:'Notes' %>
+		    </div>
+		  </div>
+		  
+
+		  <div class="form-actions" style="display: none">
+		    <%= f.button :submit %>
+		  </div>
+		<% end %>
+	</div>
+</div>

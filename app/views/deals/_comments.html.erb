@@ -1,0 +1,16 @@
+<div id="comments_container" style="display: none">
+	<div id="comments">
+		<%= simple_form_for(@comment) do |f| %>
+		  <%= f.error_notification %>
+
+		  <div class="form-inputs">
+		    <%= f.input :deal_id %>
+		    <%= f.input :comments %>
+		  </div>
+
+		  <div class="form-actions">
+		    <%= f.button :submit %>
+		  </div>
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,98 @@
+@import "bootstrap";
+body{padding-top: 60px;}
+@import "bootstrap-responsive";
+
+$grayMediumLight: #eaeaea;
+
+html {
+  overflow-y: scroll;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+  height: auto !important;
+  height: 100%;
+  background: #E6E6E6
+}
+
+body {
+  position: bottom;
+  height: auto !important;
+  background: #492B5D;
+  color: #333333;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  padding-bottom:60px;   /* Height of the footer */
+}
+
+/* footer */
+
+footer {
+  padding-top: 60px;
+  border-top: 1px solid black;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}

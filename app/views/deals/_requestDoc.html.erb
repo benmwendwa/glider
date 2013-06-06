@@ -1,0 +1,18 @@
+<div id="requestDoc_container" style="display: none">
+  <div id="requestDoc">
+    <%= simple_form_for(@request_doc) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.input :from, placeholder: 'you want to request a document from who?', label: false %>
+        <%= f.input :doc_name, placeholder: 'document name', label: false %>
+        <%= f.input :by_date %>
+        <%= f.text_area :description, label: false, placeholder:'Notes' %>
+      </div>
+
+      <div class="form-actions" style="display: none">
+        <%= f.button :submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

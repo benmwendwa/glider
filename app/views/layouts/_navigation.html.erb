@@ -1,0 +1,27 @@
+<header class="navbar navbar-fixed-top ">
+  <nav class="navbar-inner">    
+      <ul>
+        <% if user_signed_in? %>
+          <%= link_to "Glider App", deals_path, :class => 'brand' %>
+
+          <div  class="nav pull-right">
+            <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+            <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+            <li><%= link_to 'Create New Deal', new_deal_path %></li>
+            <% if current_user.has_role? :admin %>
+              <li><%= link_to 'Admin', users_path %></li>
+            <% end %>
+          </div>
+          
+        <%else%>
+          <%= link_to "my app", root_path, :class => 'brand' %>
+          <div class="nav pull-right">
+            <li><%= link_to "pricing", pricing_path %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path %></li>
+            <li><%= link_to "Help & support", help_path %></li>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+          </div>
+        <% end %>
+      </ul>
+  </nav>
+</header>

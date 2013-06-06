@@ -1,0 +1,18 @@
+<div id="invite_container" style="display: none">
+  <div id="invite">
+    <%= simple_form_for(@invited) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.input :deal_id %>
+        <%= f.input :email %>
+        <%= f.input :full_names %>
+        <%= f.input :user_type %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
